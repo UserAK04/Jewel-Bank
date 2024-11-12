@@ -3,10 +3,10 @@ package com.jewelbank.services;
 import java.util.*;
 
 public class BankingServiceImpl implements BankingService {
-    private Map<Integer, Customer> customers = new HashMap<>();
-    private Map<Integer, Account> accounts = new HashMap<>();
-    private Map<Integer, Transaction> transactions = new HashMap<>();
-    private Map<Integer, Beneficiary> beneficiaries = new HashMap<>();
+    private final Map<Integer, Customer> customers = new HashMap<>();
+    private final Map<Integer, Account> accounts = new HashMap<>();
+    private final Map<Integer, Transaction> transactions = new HashMap<>();
+    private final Map<Integer, Beneficiary> beneficiaries = new HashMap<>();
 
     @Override
     public void addCustomer(Customer customer) {
