@@ -46,7 +46,7 @@ public class BankingSystemApp {
                     int accountID = scanner.nextInt();
                     System.out.print("Enter Customer ID: ");
                     int accCustomerID = scanner.nextInt();
-                    scanner.nextLine();  // Consume newline
+                    scanner.nextLine();
                     System.out.print("Enter Account Type (Saving/Current): ");
                     String accountType = scanner.nextLine();
                     System.out.print("Enter Balance: ");
@@ -58,16 +58,16 @@ public class BankingSystemApp {
                     break;
 
                 case 3:
-                    System.out.print("Enter Beneficiary ID: ");
-                    int beneficiaryID = scanner.nextInt();
                     System.out.print("Enter Customer ID: ");
                     int benCustomerID = scanner.nextInt();
-                    scanner.nextLine();  // Consume newline
+                    System.out.print("Enter Beneficiary ID: ");
+                    int beneficiaryID = scanner.nextInt();
+                    scanner.nextLine();
                     System.out.print("Enter Beneficiary Name: ");
                     String beneficiaryName = scanner.nextLine();
-                    System.out.print("Enter Account Number: ");
+                    System.out.print("Enter Beneficiary's Account Number: ");
                     String accountNumber = scanner.nextLine();
-                    System.out.print("Enter Bank Details: ");
+                    System.out.print("Enter Bank Name: ");
                     String bankDetails = scanner.nextLine();
 
                     bankingService.addBeneficiary(new Beneficiary(beneficiaryID, benCustomerID, beneficiaryName, accountNumber, bankDetails));
@@ -80,7 +80,7 @@ public class BankingSystemApp {
                     int transactionID = scanner.nextInt();
                     System.out.print("Enter Account ID: ");
                     int transAccountID = scanner.nextInt();
-                    scanner.nextLine();  // Consume newline
+                    scanner.nextLine();
                     System.out.print("Enter Type (Deposit/Withdrawal): ");
                     String transactionType = scanner.nextLine();
                     System.out.print("Enter Amount: ");
