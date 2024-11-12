@@ -51,6 +51,6 @@ public class Beneficiary {
 
     @Override
     public String toString() {
-        return "Beneficiary ID: " + beneficiaryID + ", Name: " + name;
+        return "Beneficiary ID: " + beneficiaryID + ", Name: " + name + ", Bank: " + bankDetails;
     }
 }
